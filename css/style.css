@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  /* DEBUG:  */
+  padding: 5px;
+  border: 1px solid black;
+  font-family: arial;
+}
+
+
+.row{
+  width: 100%;
+}
+
+section{
+  text-align: center;
+}
+
+.box.img{
+  display: inline-block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* DEBUG:  */
+  width: 150px;
+  height: 150px;
+}
+
+.box.img.n1{
+  background-image: url('../img/icon/maps.png');
+  background-size: 70%;
+}
+
+.box.img.n2{
+  background-image: url('../img/icon/screen.png');
+}
+
+.box.img.n3{
+  background-image: url('../img/search.svg');
+  background-size: 70%;
+}
+
+.box.img.n4{
+  background-image: url('../img/letter.svg');
+  background-size: 70%;
+}
+
+.box.img.n5{
+  background-image: url('../img/male.svg');
+  background-size: 70%;
+}
+
+.box.img.n6.out{
+  position: relative;
+}
+
+.box.img.n6.in{
+  background-image: url('../img/icon/profile.png');
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-size: 85%;
+  background-color: blue;
+  width: 75%;
+  height: 75%;
+}
+
+.box.img.n7.out{
+  position: relative;
+}
+
+.box.img.n7.in{
+  background-image: url('../img/icon/secure.png');
+  position: absolute;
+  border-radius: 50%;
+  background-size: 70%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-size: 85%;
+  background-color: blue;
+  width: 75%;
+  height: 75%;
+}
+
+.box.img.n8.out{
+  position: relative;
+}
+
+.box.img.n8.in{
+  background-image: url('../img/icon/flex.png');
+  position: absolute;
+  border-radius: 50%;
+  background-size: 70%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-size: 85%;
+  background-color: blue;
+  width: 75%;
+  height: 75%;
+}

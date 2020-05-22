@@ -21,6 +21,7 @@
 }
 
 .clear-xs, .clear-md, .clear-lg{
+  /* si utilizza per mandare giù le colonne che sono in float */
   display: none;
   clear: both;
 }
