@@ -2,18 +2,37 @@
   box-sizing: border-box;
   margin: 0;
   /* DEBUG:  */
-  padding: 5px;
-  border: 1px solid black;
+  /* padding: 5px;
+  border: 1px solid black; */
   font-family: arial;
+  color: #33475b;
 }
 
 
+
+
+h2{
+  color:white;
+  font-weight:  200;
+  padding: 8px;
+}
+
+p{
+  color: grey;
+  font-size: 15px;
+}
+
+.all-container{
+  background-color: #f4f9fd;
+  padding: 20px;
+}
 .row{
   width: 100%;
 }
 
 section{
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .box.img{
@@ -55,17 +74,17 @@ section{
 
 .box.img.n3{
   background-image: url('../img/search.svg');
-  background-size: 70%;
+  background-size: 63%;
 }
 
 .box.img.n4{
   background-image: url('../img/letter.svg');
-  background-size: 70%;
+  background-size: 63%;
 }
 
 .box.img.n5{
   background-image: url('../img/male.svg');
-  background-size: 70%;
+  background-size: 65%;
 }
 
 .box.img.n6.in{
@@ -78,4 +97,59 @@ section{
 
 .box.img.n8.in{
   background-image: url('../img/icon/flex.png');
+}
+
+
+
+.container[class*="card"]{
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 6px #c6d4e5;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.container[class*="card"]:hover{
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
+
+.container[class*="card"]::after{
+  content: "";
+  border-radius: 5px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.container[class*="card"] {
+  padding: 20px 40px;
+}
+
+
+section .container p {
+  padding: 30px 0 30px 0;
+}
+
+section .container > div {
+  padding:8px 1%;
+}
+
+section .container > div:first-child{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+section .container > div:first-child .row{
+  background-color: #90b2d9;
+  box-shadow: 0 0 6px #c6d4e5;
+  box-shadow: 0  3px 12px rgba(63, 123, 171, 0.2);
+  margin-bottom: 40px;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
